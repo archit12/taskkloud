@@ -28,7 +28,7 @@ class Index{
 		echo $statement;
 		echo '<div  style="background:#CC334D;width:150px;margin-top:4px;height:35px;float:right;color:white">
        <span id="project" style="font-size:24px;cursor:pointer;margin:15px 10px 10px 15px;padding:20px">Tasks </span>
-        <span id="proj_desc" style="display:none;padding:5px;background:#CC334D;font-size:14px;">Click To Know about Tasks assigned to you and other members</span>
+        <div id="proj_desc" style="display:none;padding:5px;background:#CC334D;font-size:14px;">Click To Know about Tasks assigned to you and other members</div>
     </div>';
 		echo '<div id="inner_wrapper">';
 		

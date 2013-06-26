@@ -63,7 +63,7 @@ function validatetask()
 <div id="header"><img src="images/header.jpg"/></div></div>
     <div  style="background:#CC334D;width:150px;margin-top:4px;height:35px;float:right;color:white">
        <span id="project" style="font-size:24px;cursor:pointer;margin:15px 10px 10px 04px;padding:20px"> Projects</span>
-        <span id="proj_desc" style="display:none;padding:05px;background:#CC334D;font-size:14px;">Click To Know about ongoing projects and members involved</span>
+        <div id="proj_desc" style="display:none;padding:05px;background:#CC334D;font-size:14px;">Click To Know about ongoing projects and members involved</div>
     </div>
 <div id="wrapper">
 <div id="taskform"><form name="tasks" action="new2.php" method="post" id="form2" onsubmit="return validatetask()">
