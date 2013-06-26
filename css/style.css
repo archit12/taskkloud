@@ -1,0 +1,136 @@
+body
+{
+	background-color: #333;
+	margin: 0;
+	padding: 0;
+	font-family: verdana;
+}
+
+#wrapper
+{
+	width: 960px;
+	margin: auto;
+	
+	
+}
+#headerw
+{
+width:100%;
+background-color:#CC334D;
+}
+
+#header
+{
+width:960px;
+margin:auto;
+	
+
+
+}
+#taskform
+{
+padding:20px;
+background-color:#FFF;
+border:solid 1px #CC334D;
+
+}
+
+#userpanel
+{
+	width: 400px;
+	height: 50px;
+
+	float:left;
+}
+.task
+{
+background-color:#FFF;
+border:solid 1px #CC334D;
+margin:20px 20px 0px 0px;
+padding:10px;
+height: auto; 
+width: 700px;
+
+border-bottom:solid 5px #CC334D;
+
+}
+.submit
+{
+background-image:url('images/submit.png');
+width:82px;
+height:32px;
+
+}
+.done
+{
+width:100px;
+height:30px;
+position:relative;
+margin:0px;
+background-color:#CC334D;
+color:white;
+border:solid 1px #222;
+}
+.done:hover
+{
+background-color:#A5000D;
+}
+
+
+#form1
+{
+float:left;
+
+}
+
+.delete
+{
+background-image:url('images/delete.png');
+width:42px;
+height:32px;
+float:right;
+border:solid 2px purple;
+}
+#maincontent
+{
+
+}
+
+#footer
+{
+	height: 20px;
+	width: 100%;
+	background-color: #444;
+	color: #FFF;
+	text-align: center;
+
+position:fixed;
+bottom:0px;
+}
+
+#names
+{
+margin-top:20px;
+background-color:#FFF;
+border:solid 1px #CC334D;
+padding:10px;
+width:170px;
+height:auto;
+float:right;
+
+border-bottom:solid 5px #CC334D;
+border-left:solid 5px #CC334D;
+
+}
+#livefeed
+{
+margin-top:20px;
+background-color:#FFF;
+border:solid 1px #CC334D;
+padding:10px;
+width:700px;
+height:auto;
+float:left;
+border-bottom:solid 5px #CC334D;
+font-size:16px;
+}
