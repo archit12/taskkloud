@@ -74,7 +74,7 @@ function validatetask()
 			$query2="select * from `usernames` where `user_exists`='1'";
 					$res2=mysql_query($query2,$con);
 					while($rows2=mysql_fetch_array($res2))
-					echo "<option value='$rows2[1]'>".$rows2[1]."</option>";
+						echo "<option value='$rows2[1]'>".$rows2[1]."</option>";
 			?>
 		</select></td></tr><tr><td><select name="from">
 			<option value="">From</option>
@@ -97,7 +97,13 @@ function validatetask()
 		$res23=mysql_query($query23,$con);
 		while($row23=mysql_fetch_array($res23))
 		{
-			echo "<a href='#$row23[0]' style='text-decoration:none;color:#A5000D;font-size:12px;'>".$row23[1]."</a>"."</BR></BR>";
+			$query_task = 'select * from tasks where taskto = "'.$row23[1].'"';
+			$result_task = mysql_query($query_task, $con);
+			echo "<a href='#$row23[0]' style='text-decoration:none;color:#A5000D;font-size:12px;'>".$row23[1]."</a>";
+			if (mysql_num_rows($result_task)>0) {
+				echo '&nbsp<img src="images/new_task.gif" height="10px" width="20px" />';
+			}
+			echo "</BR></BR>";
 		}
 ?>
 </div>
