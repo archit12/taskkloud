@@ -97,7 +97,7 @@ function validatetask()
 		$res23=mysql_query($query23,$con);
 		while($row23=mysql_fetch_array($res23))
 		{
-			$query_task = 'select * from tasks where taskto = "'.$row23[1].'"';
+			$query_task = 'select * from tasks where taskto = "'.$row23[1].'" and done=0';
 			$result_task = mysql_query($query_task, $con);
 			echo "<a href='#$row23[0]' style='text-decoration:none;color:#A5000D;font-size:12px;'>".$row23[1]."</a>";
 			if (mysql_num_rows($result_task)>0) {
