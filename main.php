@@ -132,20 +132,23 @@ function validatetask()
 					echo"<form name='done' action='new2.php' method='post' onsubmit='return validatedone()'>";
 					//echo"<input type='submit' class='delete' name='$rows3[0]' value='' title='Delete'>";
 					echo"<a name='$rows3[0]' href=''></a>";
-					echo$rows3[1]."<br/><br/>";
+					echo $rows3[1]."<br/><br/>";
 					$query4="select * from `tasks` where '$rows3[1]' LIKE `taskto`";
 					$res4=mysql_query($query4,$con);
-					
+					$task_alotted = false;
 					
 					while($rows4=mysql_fetch_array($res4))
 					{
 						if($rows4[4]==0)
 						{
-						echo "<p style='text-align:left;'>"."<input type='checkbox' name='$rows4[0]' >";
-						echo$rows4[1]." "."from<span style='color:red;'>"."&nbsp;".$rows4[3]."</span></p>";
+							echo "<p style='text-align:left;'>"."<input type='checkbox' name='$rows4[0]' >";
+							echo$rows4[1]." "."from<span style='color:red;'>"."&nbsp;".$rows4[3]."</span></p>";
+							$task_alotted = true;
 						}
 					}
-					echo"<input type='submit' name='Done' class='done' value='Submit'>";
+					if ($task_alotted) {
+						echo"<input type='submit' name='Done' class='done' value='Submit'>";	
+					}
 					echo"</form>";
 					echo"</div>";
 				}	
