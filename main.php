@@ -123,17 +123,6 @@ function validatetask()
 		}
 ?></div>
 </td>
-<!--<td><div style="border:solid 1px #CC334D;width:270px;height:400px;margin-left:-280px;margin-top:17px;overflow-x:hidden;overflow:auto;">
-<?php /*$query55="SELECT movies FROM `movies` ORDER BY  `id` DESC ";
-		$res55=mysql_query($query55,$con);
-		while($row55=mysql_fetch_array($res55))
-		{
-			echo "<div id='rightfeeder'>".$row55[0]."</div>"."</br>";
-			
-			
-		}*/
-?></div>
-</td>-->
 </tr></table>
 </form></div>
 <div style="width:700px;">
