@@ -103,9 +103,8 @@ border:solid 2px purple;
 	background-color: #444;
 	color: #FFF;
 	text-align: center;
-
-position:fixed;
-bottom:0px;
+	position:fixed;
+	bottom:0px;
 }
 
 #names

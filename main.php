@@ -67,8 +67,8 @@ function validatetask()
     </div>
 <div id="wrapper">
 <div id="taskform"><form name="tasks" action="new2.php" method="post" id="form2" onsubmit="return validatetask()">
-		<table><tr><td>Enter Task</td><td><textarea name="task" value="" method="post" cols="77" rows="6"></textarea></td><td><table>
-		<tr><td><select name="givetaskto">
+		<table><tr><td>Enter Task<br/><textarea name="task" value="" method="post" cols="84" rows="6" style="margin-right:40px;"></textarea></td><td><table>
+		<tr><td><br/><select name="givetaskto">
 			<option value="">To</option>
 			<?php  
 			$query2="select * from `usernames` where `user_exists`='1'";
@@ -107,19 +107,17 @@ function validatetask()
 		}
 ?>
 </div>
-<div id="livefeed">Live Feed - <br/><br/>
+<div id="livefeed">
 <form name="feeds" method="post" action="new2.php" onsubmit="return validateForm()">
 <table>
-<tr><td><textarea id="livefeeder" name="livefeeder" cols="82" rows="3"></textarea></td></tr><tr><td><input type="submit" name="feeds" value="Post" class="Done"></td></tr>
+<tr><td>Live Feed<br/><textarea id="livefeeder" name="livefeeder" cols="82" rows="3"></textarea></td></tr><tr><td><input type="submit" name="feeds" value="Post" class="Done"></td></tr>
 <tr><td><br/>
-<div style="border:solid 1px #CC334D;width:675px;height:400px;overflow-x:hidden;overflow:auto;">
+<div style="border-left:solid 4px #CC334D;border-bottom:solid 2px #CC334D;border-top:solid 1px #CC334D;border-right:solid 1px #CC334D;width:675px;height:400px;overflow-x:hidden;overflow:auto;">
 <?php $query25="SELECT * FROM  `feeds` ORDER BY  `id` DESC LIMIT 0 , 10";
 		$res25=mysql_query($query25,$con);
 		while($row25=mysql_fetch_array($res25))
 		{
-			echo "<span style='padding:10px 0px 0px 10px;font-size:14px;color:#61000A;'>".$row25[1]."</span>"."</br></br>";
-			
-			
+			echo "<div class='display_feed' style='padding:10px 0px 10px 10px;font-size:14px;color:#61000A;background:rgba(51, 51, 51, 0.3);border-bottom:1px solid gray;margin-bottom:2px;'>".$row25[1]."</div>";
 		}
 ?></div>
 </td>
