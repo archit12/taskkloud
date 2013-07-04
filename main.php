@@ -65,6 +65,10 @@ function validatetask()
        <span id="project" style="font-size:24px;cursor:pointer;margin:15px 10px 10px 04px;padding:20px"> Projects</span>
         <div id="proj_desc" style="display:none;padding:05px;background:#CC334D;font-size:14px;">Click To Know about ongoing projects and members involved</div>
     </div>
+   	<a id="backTop" style='float:left;position:fixed;top:600px;text-decoration:none;' href="#taskform"><div id="top" style="background:
+rgb(185, 32, 58);height=400px;width:100px;font-size:13px;color:white;text-align:center;padding-top:10px;padding-bottom:10px;">
+	Back To<br/>Top
+	</div></a>
 <div id="wrapper">
 <div id="taskform"><form name="tasks" action="new2.php" method="post" id="form2" onsubmit="return validatetask()">
 		<table><tr><td>Enter Task<br/><textarea name="task" value="" method="post" cols="84" rows="6" style="margin-right:40px;"></textarea></td><td><table>
@@ -89,7 +93,6 @@ function validatetask()
 		
 		
 	</form></div>
-    
 	<div id="maincontent">
 <div id="names">Members List :
 <br><br>
